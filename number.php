@@ -50,6 +50,20 @@
 
     echo "<small> convert '22.14' string to int(22) </small>";
     var_dump(intval("22.14"));
+
+    echo "<small> constant var - constants are global </small>";
+    define("PI", 3.14);
+    var_dump(PI);
+
+    echo "<small> constant Array </small>";
+    define("cars", ["BMW", "Ford", "Ferrari"]);
+    var_dump(cars);
+    $a = 9;
+    echo "<small> a = 9 | a++ </small>";
+    echo $a++;
+
+    echo "<small> a = 9 | ++a </small>";
+    echo ++$a;
     // 
     ?>
 
